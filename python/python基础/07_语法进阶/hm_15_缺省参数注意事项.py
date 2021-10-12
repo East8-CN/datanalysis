@@ -1,0 +1,18 @@
+def print_info(name, title="", gender=True):
+    """
+    :param title: 职务
+    :param name: 班上同学的姓名
+    :param gender: True 男生  False 女生
+    """
+    gender_text = "男生"
+    if not gender:
+        gender_text = "女生"
+    print("[%s] %s 是 %s" % (title, name, gender_text))
+
+
+# 假设班上男生居多
+# 提示:在指定缺省参数时,使用最常见的值作为默认值
+# 有默认值得缺省参数,常放在末尾
+print_info("小明")
+print_info("老王")
+print_info("小美", gender=False)
